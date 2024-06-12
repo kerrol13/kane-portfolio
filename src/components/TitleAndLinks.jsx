@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import animationVariants from "../animation/animationVariants";
+import Lenis from "lenis";
 
-const TitleAndLinks = ({ title, anchor, delay, self }) => {
+const TitleAndLinks = ({ title, anchor, delay, self, isOnclick }) => {
   const { containerVariants, opacityVariant } = animationVariants(delay);
-
+  const lenis = new Lenis();
+  console.log(anchor[0].href)
   return (
     <motion.div variants={containerVariants} initial="hidden" animate="visible">
       <motion.div variants={opacityVariant}>
@@ -11,6 +13,7 @@ const TitleAndLinks = ({ title, anchor, delay, self }) => {
         {anchor.map((a) => (
           <div key={a.text} className="my-1.5">
             <a
+              onClick={isOnclick ? lenis.scrollTo(a.href) : null}
               target={self ? "_self" : "_blank"}
               rel="noopener noreferrer"
               className="font-semibold"

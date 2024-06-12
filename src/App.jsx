@@ -3,6 +3,7 @@ import HomePage from "./components/HomePage";
 import { useLocation, useRoutes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { cloneElement } from "react";
+import ReactLenis from "lenis/react";
 
 function App() {
   const element = useRoutes([
@@ -20,9 +21,11 @@ function App() {
 
   if (!element) return null;
   return (
-    <AnimatePresence mode="wait">
-      {cloneElement(element, { key: location.pathname })}
-    </AnimatePresence>
+    <ReactLenis root options={{wheelMultiplier:1.3}}>
+      <AnimatePresence mode="wait">
+        {cloneElement(element, { key: location.pathname })}
+      </AnimatePresence>
+    </ReactLenis>
   );
 }
 

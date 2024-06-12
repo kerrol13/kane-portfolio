@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import ProjectDescription from "./ProjectDescription";
 import Projects from "./Projects";
-import SmoothScroll from "./SmoothScroll";
 import PageTransition from "./PageTransition";
 
 const ProjectsPage = () => {
@@ -27,12 +26,10 @@ const ProjectsPage = () => {
         displayedProject={displayedProject}
         isFixed={isFixed}
       />
-      <SmoothScroll>
-        <Projects
-          onFixedInfo={handleFixedInfo}
-          onDisplayedProject={handleDisplayedProject}
-        />
-      </SmoothScroll>
+      <Projects
+        onFixedInfo={handleFixedInfo}
+        onDisplayedProject={handleDisplayedProject}
+      />
     </div>
   );
 };

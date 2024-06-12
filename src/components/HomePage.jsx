@@ -5,7 +5,6 @@ import HeroSecAnchor from "./HeroSecAnchor";
 import HeroSecNamePosition from "./HeroSecNamePosition";
 import PageTransition from "./PageTransition";
 import ProjectList from "./ProjectList";
-import SmoothScroll from "./SmoothScroll";
 import TechStack from "./TechStack";
 import WorkExp from "./WorkExp";
 
@@ -13,10 +12,10 @@ const HomePage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="bg-white ">
       <PageTransition />
-      <SmoothScroll>
         <main className="p-5 xl:p-8">
           <section className="min-h-[768px]   h-screen md:h-[80vh] grid xl:h-[100vh] xl:grid-cols-2 content-between text-zinc-800 ">
             <HeroSecNamePosition />
@@ -30,7 +29,6 @@ const HomePage = () => {
             <Awards />
           </section>
         </main>
-      </SmoothScroll>
     </div>
   );
 };

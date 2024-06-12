@@ -1,5 +1,5 @@
 const SOCIAL_ANCHOR = {
-  info: [{ href: "#aboutME", text: "About me" }],
+  info: [{ href: "#aboutMe", text: "About me" }],
   contact: [{ href: "mailto:kerrolbusiness@gmail.com", text: "Email Address" }],
   social: [
     {

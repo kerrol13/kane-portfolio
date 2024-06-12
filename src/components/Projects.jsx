@@ -12,7 +12,7 @@ const Projects = ({ onFixedInfo, onDisplayedProject }) => {
   } = animationVariants();
 
   const refs = PROJECT_INFO.map(() => useRef(null));
-  const isInView = refs.map((ref) => useInView(ref, { margin: "-60%" }));
+  const isInView = refs.map((ref) => useInView(ref, { margin: "-35%" }));
 
   useEffect(() => {
     onFixedInfo(isInView[0]);

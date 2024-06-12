@@ -9,11 +9,11 @@ const HeroSecAboutMe = () => {
 
   return (
     <motion.div
-      id="aboutME"
+      id="aboutMe"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="lg:h-[32vh] grid md:grid-rows-2 md:gap-y-5  md:grid-cols-2 grid-rows-3 mb-5 "
+      className="lg:h-[32vh] grid md:grid-rows-2 md:gap-y-5  md:grid-cols-2 grid-rows-3 mb-5"
     >
       <div className="md:col-span-2 overflow-hidden ">
         <motion.img
