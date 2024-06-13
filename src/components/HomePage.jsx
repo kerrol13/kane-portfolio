@@ -7,6 +7,7 @@ import PageTransition from "./PageTransition";
 import ProjectList from "./ProjectList";
 import TechStack from "./TechStack";
 import WorkExp from "./WorkExp";
+import ReactLenis from "lenis/react";
 
 const HomePage = () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ const HomePage = () => {
   }, []);
 
   return (
+    <ReactLenis root options={{wheelMultiplier:1.2, duration:2}}>
     <div className="bg-white ">
       <PageTransition />
         <main className="p-5 xl:p-8">
@@ -30,6 +32,7 @@ const HomePage = () => {
           </section>
         </main>
     </div>
+    </ReactLenis>
   );
 };
 export default HomePage;

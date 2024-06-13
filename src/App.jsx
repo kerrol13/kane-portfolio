@@ -21,11 +21,10 @@ function App() {
 
   if (!element) return null;
   return (
-    <ReactLenis root options={{wheelMultiplier:1.2, duration:2}}>
+
       <AnimatePresence mode="wait">
         {cloneElement(element, { key: location.pathname })}
       </AnimatePresence>
-    </ReactLenis>
   );
 }
 

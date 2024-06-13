@@ -25,7 +25,7 @@ const animationVariants = (delay = 0) => {
     variantsSmallDevice: createVariant(300, -10),
     normalVariant: createVariant(200, 0),
     opacityVariant: createVariant(100, 0, { delay }),
-    projectImgVariant: createVariant(30, 0, { damping: 30, type: "tween" }),
+    projectImgVariant: createVariant(10, 0, { damping: 10, type: "tween" }),
     initialProjectImgVariant: createVariant(0, 0, {
       damping: 15,
       type: "tween",
