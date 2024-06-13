@@ -32,7 +32,7 @@ const Projects = ({ onFixedInfo, onDisplayedProject }) => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="xl:w-[75vw] mb-[15vh] xl:mb-0"
+        className="xl:w-[75vw]  "
       >
         <div className="h-[30vh] overflow-hidden">
           <motion.p
@@ -44,7 +44,7 @@ const Projects = ({ onFixedInfo, onDisplayedProject }) => {
             building high-quality software solutions.
           </motion.p>
         </div>
-        <motion.div variants={projectImgVariant} className="space-y-16">
+        <motion.div variants={projectImgVariant} className="space-y-16 last:pb-10 xl:last:pb-0">
           {PROJECT_INFO.map((project, index) => (
             <motion.div
               ref={refs[index]}
@@ -60,7 +60,7 @@ const Projects = ({ onFixedInfo, onDisplayedProject }) => {
                 src={project.src}
                 alt={project.alt}
               />
-              <div className="uppercase text-[clamp(.9rem,10vw,.7vw)] text-white block xl:hidden m-5 space-y-8">
+              <div className="uppercase text-[clamp(.9rem,10vw,.7vw)] text-white block xl:hidden p-5  space-y-8">
                 <p className="font-medium space-y-2 text-[clamp(1.5rem,10vw,1.5vw)] break-words">
                   {project.title}
                 </p>
@@ -72,7 +72,7 @@ const Projects = ({ onFixedInfo, onDisplayedProject }) => {
                 </div>
                 <div className="font-medium space-y-2">
                   <p>Tools</p>
-                  <div className="text-[clamp(.9rem,10vw,.55vw)] flex-wrap gap-4 flex font-light leading-[clamp(1.6rem,10vw,1.2vw)] ">
+                  <div className=" text-[clamp(.9rem,10vw,.55vw)] flex-wrap gap-4 flex font-light leading-[clamp(1.6rem,10vw,1.2vw)] ">
                     {project.tools.map((detail, index) => (
                       <div key={index}>{detail}</div>
                     ))}

@@ -25,7 +25,7 @@ const ProjectDescription = ({ displayedProject, isFixed }) => {
         variants={animationVariants(0.6).opacityVariant}
         initial="hidden"
         animate="visible"
-        className="w-[25vw] h-[120vh] right-0 absolute mt-20 z-20 hidden xl:block"
+        className="w-[25vw] right-0 absolute mt-20 z-20 hidden xl:block"
       >
         <div className="h-[30vh]" />
         <AnimatePresence mode="wait">

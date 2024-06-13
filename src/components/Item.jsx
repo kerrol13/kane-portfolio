@@ -18,7 +18,7 @@ const Item = ({ isFixed, displayedProject }) => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="flex h-[120vh] text-white"
+      className="flex h-[130vh] text-white"
       exit="hidden"
     >
       <motion.div

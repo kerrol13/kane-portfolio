@@ -3,11 +3,12 @@ import AspNetIcon from "../components/icons/AspNetIcon";
 import MsSqlServerIcon from "../components/icons/MsSqlServerIcon";
 import ReactIcon from "../components/icons/ReactIcon";
 import TailwindIcon from "../components/icons/TailwindIcon";
-import dashboard from "../assets/images/dashboard.webp";
+import dashboard from "../assets/images/dashboard.avif";
+import onboarding from "../assets/images/onboarding.avif";
 import football from "../assets/images/football.avif";
-import kasina from "../assets/images/kasina.webp";
+import kasina from "../assets/images/kasina.avif";
 import oldPort from "../assets/images/oldPort.avif";
-import gawanke from "../assets/images/gawanke.webp";
+import gawanke from "../assets/images/gawanke.avif";
 import cemetery from "../assets/images/cemetery.avif";
 import libary from "../assets/images/library.avif";
 import icecream from "../assets/images/icecream.avif";
@@ -58,7 +59,7 @@ const PROJECT_INFO = [
     details: [2024, "Developed", "Company Project"],
   },
   {
-    src: dashboard,
+    src: onboarding,
     alt: "MVP Onboarding Project",
     title: "MVP Onboarding",
     about:

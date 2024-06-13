@@ -8,14 +8,14 @@ const animationVariants = (delay = 0) => {
   };
 
   const createVariant = (hiddenY, visibleY, additionalTransition = {}) => ({
-    hidden: { opacity: 0, y: hiddenY },
+    hidden: { opacity: 0.001, y: hiddenY },
     visible: {
       opacity: 1,
       y: visibleY,
       transition: { ...transition, ...additionalTransition },
     },
     exit: {
-      opacity: 0,
+      opacity: 0.001,
       transition: { ...transition, ...additionalTransition },
     },
   });
