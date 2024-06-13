@@ -44,7 +44,7 @@ const Projects = ({ onFixedInfo, onDisplayedProject }) => {
             building high-quality software solutions.
           </motion.p>
         </div>
-        <motion.div variants={projectImgVariant} className="space-y-16 last:pb-10 xl:last:pb-0">
+        <motion.div className="space-y-16 last:pb-10 xl:last:pb-0">
           {PROJECT_INFO.map((project, index) => (
             <motion.div
               ref={refs[index]}

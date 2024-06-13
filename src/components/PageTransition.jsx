@@ -18,7 +18,7 @@ console.log("pagerans")
         initial={{ scaleY: 1 }}
         animate={{ scaleY: 0 }}
         exit={{ scaleY: 0 }}
-        transition={{ duration: 0.9, delay: 0.3 }}
+        transition={{ duration: .9, delay: 0.3 }}
         className={`h-screen z-50 fixed w-screen origin-top ${bgColor}`}
       ></motion.div>
     </>
