@@ -22,11 +22,11 @@ function App() {
 
   if (!element) return null;
   return (
-    <AnimatePresence mode="wait">
-      <HelmetProvider>
+    <HelmetProvider>
+      <AnimatePresence mode="wait">
         {cloneElement(element, { key: location.pathname })}
-      </HelmetProvider>
-    </AnimatePresence>
+      </AnimatePresence>
+    </HelmetProvider>
   );
 }
 
