@@ -60,6 +60,7 @@ const Projects = ({ onFixedInfo, onDisplayedProject }) => {
                 title={project.alt}
                 height="auto"
                 width="auto"
+                loading="lazy"
               />
               <div className="uppercase text-[clamp(.9rem,10vw,.7vw)] text-white block xl:hidden p-5  space-y-8">
                 <p className="font-medium space-y-2 text-[clamp(1.5rem,10vw,1.5vw)] break-words">
