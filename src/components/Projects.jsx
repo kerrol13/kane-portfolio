@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import animationVariants from "../animation/animationVariants";
-import PROJECT_INFO from "../data/PROJECT_INFO";
+import PROJECT_INFO, { PROJECT_INTRO } from "../data/PROJECT_INFO";
 
 const Projects = ({ onFixedInfo, onDisplayedProject }) => {
   const {
@@ -35,14 +35,12 @@ const Projects = ({ onFixedInfo, onDisplayedProject }) => {
         className="xl:w-[75vw]  "
       >
         <div className="h-[30vh] overflow-hidden">
-          <motion.p
+          <motion.h1
             variants={variants}
-            className="w-full md:w-[85vw] xl:w-[70vw] mt-[clamp(0,0,0)] xs:mt-[clamp(2rem,10vw,1.7vw)] flex items-center font-extralight p-5 xl:p-8 text-[clamp(1.2rem,5vw,4vw)] lg:text-[clamp(1.4rem,5vw,1.65vw)] lg:leading-[clamp(1.8rem,10vw,2.5vw)] leading-[clamp(1.8rem,10vw,5vw)] italic text-white"
+            className="w-full md:w-[85vw] xl:w-[70vw] mt-[clamp(0,0,0)] xs:mt-[clamp(2rem,10vw,1.7vw)] flex items-center font-extralight p-5 xl:p-8 text-[clamp(1.4rem,5vw,4vw)] lg:text-[clamp(1.4rem,5vw,2.1vw)] lg:leading-[clamp(1.8rem,10vw,3vw)] leading-[clamp(1.8rem,10vw,5vw)] italic text-white"
           >
-            Here are my projects, which showcase my work as a software
-            developer. They highlight my skills, creativity, and dedication to
-            building high-quality software solutions.
-          </motion.p>
+            {PROJECT_INTRO}
+          </motion.h1>
         </div>
         <motion.div className="space-y-16 last:pb-10 xl:last:pb-0">
           {PROJECT_INFO.map((project, index) => (
@@ -56,9 +54,12 @@ const Projects = ({ onFixedInfo, onDisplayedProject }) => {
               }
             >
               <img
-                className="w-full object-contain"
+                className="w-full object-contain h-auto"
                 src={project.src}
                 alt={project.alt}
+                title={project.alt}
+                height="auto"
+                width="auto"
               />
               <div className="uppercase text-[clamp(.9rem,10vw,.7vw)] text-white block xl:hidden p-5  space-y-8">
                 <p className="font-medium space-y-2 text-[clamp(1.5rem,10vw,1.5vw)] break-words">

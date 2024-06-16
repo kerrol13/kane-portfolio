@@ -24,12 +24,12 @@ const HeroSecNamePosition = () => {
         </motion.p>
       </div>
       <div className="h-[clamp(1.9rem,10vw,4.5vw)] overflow-hidden">
-        <motion.p
+        <motion.h1
           variants={variantsSmallDevice}
           className="text-[clamp(2rem,10vw,4.07vw)] font-light text-zinc-500 ml-[clamp(0rem,2vw,.4vw)]"
         >
           Software Developer
-        </motion.p>
+        </motion.h1>
       </div>
     </motion.div>
   );

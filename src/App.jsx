@@ -4,6 +4,7 @@ import { useLocation, useRoutes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { cloneElement } from "react";
 import ReactLenis from "lenis/react";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   const element = useRoutes([
@@ -21,10 +22,11 @@ function App() {
 
   if (!element) return null;
   return (
-
-      <AnimatePresence mode="wait">
+    <AnimatePresence mode="wait">
+      <HelmetProvider>
         {cloneElement(element, { key: location.pathname })}
-      </AnimatePresence>
+      </HelmetProvider>
+    </AnimatePresence>
   );
 }
 

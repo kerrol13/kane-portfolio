@@ -1,11 +1,11 @@
 import { motion, useInView } from "framer-motion";
 import animationVariants from "../animation/animationVariants";
-import PROJECTS from "../data/PROJECTS";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import ArrowIcon from "./icons/ArrowIcon";
+import PROJECT_INFO from "../data/PROJECT_INFO";
 
-const allProjectNames = PROJECTS.map((p) => p.name).join(", ");
+const allProjectNames = PROJECT_INFO.map((p) => p.title).join(", ");
 const ProjectList = () => {
   const { containerVariants, normalVariant } = animationVariants(0.5);
   const ref = useRef(null);

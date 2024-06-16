@@ -5,7 +5,6 @@ import Lenis from "lenis";
 const TitleAndLinks = ({ title, anchor, delay, self, isOnclick }) => {
   const { containerVariants, opacityVariant } = animationVariants(delay);
   const lenis = new Lenis();
-  console.log(anchor[0].href)
   return (
     <motion.div variants={containerVariants} initial="hidden" animate="visible">
       <motion.div variants={opacityVariant}>

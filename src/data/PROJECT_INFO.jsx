@@ -168,5 +168,6 @@ const PROJECT_INFO = [
     details: [2018, "Designed", "Personal Project"],
   },
 ];
-
+export const PROJECT_INTRO =
+  "Here are my projects, showcasing my skills, creativity, and dedication to building high-quality software solutions as a software developer.";
 export default PROJECT_INFO;

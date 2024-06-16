@@ -20,6 +20,9 @@ const HeroSecAboutMe = () => {
           variants={opacityVariant}
           className=" bg-zinc-200 h-[clamp(8rem,17vh,17vh)] "
           src={myPhoto}
+          alt="Kane Errol Photo"
+          width="auto"
+          height="auto"
         />
       </div>
       {ABOUT_ME.map((a, index) => (
