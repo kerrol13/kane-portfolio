@@ -22,12 +22,12 @@ const ProjectList = () => {
       <motion.p variants={normalVariant} className="col-span-full">
         Projects
       </motion.p>
-      <motion.ul
+      <motion.p
         variants={normalVariant}
         className="col-span-full text-[clamp(.9rem,10vw,.7vw)] font-light italic leading-[clamp(1.6rem,10vw,1.2vw)] normal-case space-y-3  break-words"
       >
         {allProjectNames}.
-      </motion.ul>
+      </motion.p>
       <Link
         to="/projects"
         className=" whitespace-nowrap min-w-[185px] underline-offset-4 flex items-center gap-x-2 underline font-semibold text-[clamp(1rem,2vw,.8vw)] "

@@ -8,7 +8,7 @@ const TitleAndLinks = ({ title, anchor, delay, self, isOnclick }) => {
   return (
     <motion.div variants={containerVariants} initial="hidden" animate="visible">
       <motion.div variants={opacityVariant}>
-        <p className="text-zinc-400 font-medium">{title}</p>
+        <p className="text-zinc-500 font-medium">{title}</p>
         {anchor.map((a) => (
           <div key={a.text} className="my-1.5">
             <a
