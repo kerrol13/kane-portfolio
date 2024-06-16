@@ -23,6 +23,8 @@ const HeroSecAboutMe = () => {
           alt="Kane Errol Photo"
           width="auto"
           height="auto"
+          title="Kane Errol Photo"
+          loading="lazy"
         />
       </div>
       {ABOUT_ME.map((a, index) => (
