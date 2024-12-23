@@ -1,28 +1,29 @@
-import CSharpIcon from "../components/icons/CSharpIcon";
-import AspNetIcon from "../components/icons/AspNetIcon";
-import MsSqlServerIcon from "../components/icons/MsSqlServerIcon";
-import ReactIcon from "../components/icons/ReactIcon";
-import TailwindIcon from "../components/icons/TailwindIcon";
-import dashboard from "../assets/images/dashboard.avif";
-import onboarding from "../assets/images/onboarding.avif";
-import football from "../assets/images/football.avif";
-import kasina from "../assets/images/kasina.avif";
-import oldPort from "../assets/images/oldPort.avif";
-import gawanke from "../assets/images/gawanke.avif";
 import cemetery from "../assets/images/cemetery.avif";
-import libary from "../assets/images/library.avif";
+import dashboard from "../assets/images/dashboard.avif";
+import football from "../assets/images/football.avif";
+import gawanke from "../assets/images/gawanke.avif";
 import icecream from "../assets/images/icecream.avif";
+import kasina from "../assets/images/kasina.avif";
+import kasinaAi from "../assets/images/kasinaAi.avif";
+import libary from "../assets/images/library.avif";
+import oldPort from "../assets/images/oldPort.avif";
+import onboarding from "../assets/images/onboarding.avif";
 import salveo from "../assets/images/salveo.avif";
-import Photoshop from "../components/icons/Photoshop";
-import Xd from "../components/icons/Xd";
-import HtmlIcon from "../components/icons/HtmlIcon";
-import JSIcon from "../components/icons/JSIcon";
+import AspNetIcon from "../components/icons/AspNetIcon";
+import CSharpIcon from "../components/icons/CSharpIcon";
 import CssIcon from "../components/icons/CssIcon";
+import HtmlIcon from "../components/icons/HtmlIcon";
 import JqueryIcon from "../components/icons/JqueryIcon";
+import JSIcon from "../components/icons/JSIcon";
+import MsSqlServerIcon from "../components/icons/MsSqlServerIcon";
 import MySqlIcon from "../components/icons/MySqlIcon";
+import Photoshop from "../components/icons/Photoshop";
 import PhpIcon from "../components/icons/PhpIcon";
 import PhytonIcon from "../components/icons/PhytonIcon";
+import ReactIcon from "../components/icons/ReactIcon";
+import TailwindIcon from "../components/icons/TailwindIcon";
 import VisualBasicIcon from "../components/icons/VisualBasicIcon";
+import Xd from "../components/icons/Xd";
 
 const tools = {
   react: <ReactIcon color="white" title="ReactJs" />,
@@ -43,6 +44,21 @@ const tools = {
 };
 
 const PROJECT_INFO = [
+  {
+    src: kasinaAi,
+    alt: "Kasina AI Project",
+    title: "Kasina AI",
+    about:
+      "A modern web app that lets you build your own AI chatbot in minutes. Upload your files, train your AI, and deploy a smart customer service assistant that knows your business. Simple user management and website integration included.",
+    tools: [
+      tools.react,
+      tools.tailwind,
+      tools.csharp,
+      tools.aspnet,
+      tools.mssql,
+    ],
+    details: [2024, "Developed", "Company Project"],
+  },
   {
     src: dashboard,
     alt: "MVP Dashboard Project",
