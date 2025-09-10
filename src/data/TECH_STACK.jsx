@@ -19,14 +19,11 @@ import Xd from "../components/icons/Xd";
 
 const TECH_STACK = [
   { name: "React JS", icon: <ReactIcon /> },
-  { name: "React Router", icon: <ReactRouterIcon /> },
   { name: "Redux", icon: <ReduxIcon /> },
   { name: "HTML", icon: <HtmlIcon /> },
   { name: "CSS", icon: <CssIcon /> },
   { name: "Javascript", icon: <JSIcon /> },
-  { name: "Sass", icon: <SassIcon /> },
   { name: "Tailwind", icon: <TailwindIcon /> },
-  { name: "Jquery", icon: <JqueryIcon /> },
   { name: "Axios", icon: <AxiosIcon /> },
   { name: "C#", icon: <CSharpIcon /> },
   { name: "Asp .Net", icon: <AspNetIcon /> },

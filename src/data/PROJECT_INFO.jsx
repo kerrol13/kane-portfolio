@@ -8,6 +8,7 @@ import kasinaAi from "../assets/images/kasinaAi.avif";
 import libary from "../assets/images/library.avif";
 import oldPort from "../assets/images/oldPort.avif";
 import onboarding from "../assets/images/onboarding.avif";
+import mvpForm from "../assets/images/mvp-form.avif";
 import salveo from "../assets/images/salveo.avif";
 import AspNetIcon from "../components/icons/AspNetIcon";
 import CSharpIcon from "../components/icons/CSharpIcon";
@@ -44,6 +45,21 @@ const tools = {
 };
 
 const PROJECT_INFO = [
+    {
+    src: mvpForm,
+    alt: "MVP Evaluation Form",
+    title: "MVP Evaluation Form",
+    about:
+      "A web app built for clients to evaluate employees efficiently. It automates performance calculations, manages results in an admin table, allows Excel exports, and sends evaluation reports via email to admins after submission.",
+    tools: [
+      tools.react,
+      tools.tailwind,
+      tools.csharp,
+      tools.aspnet,
+      tools.mssql,
+    ],
+    details: [2025, "Developed", "Company Project"],
+  },
   {
     src: kasinaAi,
     alt: "Kasina AI Project",
@@ -94,7 +110,7 @@ const PROJECT_INFO = [
     alt: "Football Match Project",
     title: "Football Match",
     about:
-      "It's a sleek web app designed to display company's analytics data in style. Plus, it offers effortless user management, allowing users to easily assign roles.",
+      "A web app that displays the latest football matches in Australia. Users can select their favorite team or competition and export match schedules as an ICS file, making it easy to add to their calendar and receive notifications for upcoming games.",
     tools: [
       tools.react,
       tools.tailwind,
